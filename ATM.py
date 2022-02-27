@@ -15,7 +15,7 @@ class Atm(object):
         if a == self.atmCard:
             p = input("Input password: ")
             if p == self.password:
-                am = input("Input amount to Withdraw: ")
+                am = int(input("Input amount to Withdraw: "))
                 self.balance -= am
                 self.CheckBalance()
                 start(self)
@@ -32,7 +32,7 @@ class Atm(object):
         if a == self.atmCard:
             p = input("Input password: ")
             if p == self.password:
-                am = input("Input amount to Deposit: ")
+                am = int(input("Input amount to Deposit: "))
                 self.balance += am
                 self.CheckBalance()
                 start(self)
